@@ -1,5 +1,7 @@
+```java
 package pl.msurvival.welcome;
 
+import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.Sound;
 import org.bukkit.entity.Player;
@@ -25,8 +27,23 @@ public final class MSurvivalWelcome extends JavaPlugin implements Listener {
             event.joinMessage(null);
         }
 
+        long delay = 0L;
+
         for (String line : getConfig().getStringList("welcome-message")) {
-            player.sendMessage(color(line.replace("%player%", player.getName())));
+
+            if (line.startsWith("DELAY:")) {
+                try {
+                    delay += Long.parseLong(line.substring(6).trim());
+                } catch (NumberFormatException ignored) {}
+                continue;
+            }
+
+            String message = color(line.replace("%player%", player.getName()));
+            long finalDelay = delay;
+
+            Bukkit.getScheduler().runTaskLater(this, () -> {
+                player.sendMessage(message);
+            }, finalDelay);
         }
 
         if (getConfig().getBoolean("title.enabled", true)) {
@@ -47,3 +64,4 @@ public final class MSurvivalWelcome extends JavaPlugin implements Listener {
         return ChatColor.translateAlternateColorCodes('&', text);
     }
 }
+```
