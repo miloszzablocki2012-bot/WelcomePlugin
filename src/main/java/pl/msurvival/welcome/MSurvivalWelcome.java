@@ -1,4 +1,3 @@
-```java
 package pl.msurvival.welcome;
 
 import org.bukkit.Bukkit;
@@ -30,7 +29,6 @@ public final class MSurvivalWelcome extends JavaPlugin implements Listener {
         long delay = 0L;
 
         for (String line : getConfig().getStringList("welcome-message")) {
-
             if (line.startsWith("DELAY:")) {
                 try {
                     delay += Long.parseLong(line.substring(6).trim());
@@ -47,8 +45,11 @@ public final class MSurvivalWelcome extends JavaPlugin implements Listener {
         }
 
         if (getConfig().getBoolean("title.enabled", true)) {
-            String title = color(getConfig().getString("title.title", "&6&lMSURVIVAL"));
-            String subtitle = color(getConfig().getString("title.subtitle", "&eWitaj na serwerze!"));
+            String title = color(getConfig().getString("title.title", "&6&lMSURVIVAL"))
+                    .replace("%player%", player.getName());
+            String subtitle = color(getConfig().getString("title.subtitle", "&eWitaj na serwerze!"))
+                    .replace("%player%", player.getName());
+
             player.sendTitle(title, subtitle, 10, 60, 20);
         }
 
@@ -64,4 +65,3 @@ public final class MSurvivalWelcome extends JavaPlugin implements Listener {
         return ChatColor.translateAlternateColorCodes('&', text);
     }
 }
-```
