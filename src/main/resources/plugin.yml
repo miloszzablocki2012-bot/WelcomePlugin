@@ -1,5 +1,21 @@
 name: MSurvivalWelcome
-version: 1.0
+version: 1.2
 main: pl.msurvival.welcome.MSurvivalWelcome
 api-version: '1.21'
 author: Milekz
+
+commands:
+  pomoc:
+    description: Pokazuje komendy serwera
+    usage: /pomoc
+  komendy:
+    description: Pokazuje komendy serwera
+    usage: /komendy
+  welcomereload:
+    description: Przeladowuje konfiguracje pluginu
+    usage: /welcomereload
+
+permissions:
+  msurvivalwelcome.admin:
+    description: Dostep do reloadu WelcomePlugin
+    default: op

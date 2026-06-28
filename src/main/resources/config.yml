@@ -1,27 +1,42 @@
 hide-default-join-message: true
 
 welcome-message:
-  - '&8&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━'
-  - '&6✦ &eWITAJ NA &6MSURVIVAL&e! &6✦'
-  - ''
-  - '&fCześć &e%player%&f!'
-  - '&7To oficjalny serwer twórcy &6Milekz&7.'
-  - '&7Dołącz do naszej społeczności i baw się dobrze!'
-  - ''
-  - '&c▶ &fYouTube: &e@Milekz'
-  - '&d♫ &fTikTok: &e@Milekz'
-  - ''
-  - '&7⭐ Spodobał Ci się serwer?'
-  - '&eZostaw suba, lajka i obserwację!'
-  - ''
-  - '&aMiłej gry! ❤'
-  - '&8&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━'
+  - ""
+  - "&8&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+  - "&6&lMSURVIVAL &8» &fWitaj, &e%player%&f!"
+  - "&7Miłej gry na serwerze."
+  - "&7Wpisz &e/pomoc &7aby zobaczyć komendy."
+  - "&8&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+  - ""
 
 title:
   enabled: true
-  title: '&6&lMSURVIVAL'
-  subtitle: '&eWitaj na serwerze twórcy Milekz!'
+  title: "&6&lMSURVIVAL"
+  subtitle: "&eWitaj na serwerze!"
 
 sound:
   enabled: true
   name: ENTITY_PLAYER_LEVELUP
+
+messages:
+  no-permission: "&cNie masz uprawnień."
+  reload: "&aPrzeładowano konfigurację pluginu."
+
+help-message:
+  - ""
+  - "&8&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+  - "&6&lMSURVIVAL &8» &fDostępne komendy"
+  - "&8&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+  - ""
+  - "&e/pomoc &8- &7pokazuje tę listę komend"
+  - "&e/komendy &8- &7pokazuje tę listę komend"
+  - "&e/rank &8- &7sprawdź swoją rangę"
+  - "&e/weeklykey &8- &7odbierz cotygodniowy klucz"
+  - "&e/key use &8- &7użyj klucza i odbierz nagrodę"
+  - "&e/keyitem &8- &7odbierz item do klucza"
+  - "&e/login <hasło> &8- &7zaloguj się"
+  - "&e/register <hasło> <hasło> &8- &7zarejestruj konto"
+  - ""
+  - "&8&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+  - "&6&lmsurvival.6mc.pl"
+  - ""
