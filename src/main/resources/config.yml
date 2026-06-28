@@ -1,13 +1,60 @@
 hide-default-join-message: true
 
 welcome-message:
-  - ""
-  - "&8&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
-  - "&6&lMSURVIVAL &8» &fWitaj, &e%player%&f!"
-  - "&7Miłej gry na serwerze."
-  - "&7Wpisz &e/pomoc &7aby zobaczyć komendy."
-  - "&8&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
-  - ""
+  - '&6&l✦━━━━━━━━━━ &e&lMSURVIVAL &6&l━━━━━━━━━━✦'
+  - '&b⚡ &fOficjalny serwer twórcy &e&lMilekz &b⚡'
+  - ''
+  - '&f👋 Witaj &e&l%player%&f!'
+  - '&7Cieszymy się, że dołączyłeś do naszej społeczności.'
+  - '&7Życzymy Ci świetnej zabawy!'
+  - ''
+
+  - 'DELAY:200'
+
+  - '&6&l📖 INFORMACJE'
+  - '&e➜ &fSurvival na &e&lnajnowszej wersji Minecraft.'
+  - '&e➜ &fSerwer działa &a24/7.'
+  - '&e➜ &fRegularne aktualizacje i nowe funkcje.'
+  - '&e➜ &fAktywna administracja.'
+  - ''
+
+  - 'DELAY:200'
+
+  - '&a&l⌨ DOSTĘPNE KOMENDY'
+  - '&e➜ &f/pomoc &7- lista komend'
+  - '&e➜ &f/rank &7- sprawdź swoją rangę'
+  - '&e➜ &f/weeklykey &7- odbierz cotygodniowy klucz'
+  - '&e➜ &f/key use &7- użyj klucza'
+  - '&e➜ &f/keyitem &7- odbierz przedmiot do klucza'
+  - ''
+
+  - 'DELAY:200'
+
+  - '&c&l⚖ REGULAMIN'
+  - '&c✘ &fNie kradnij innym graczom.'
+  - '&c✘ &fNie używaj cheatów ani X-Raya.'
+  - '&c✘ &fNie griefuj cudzych budowli.'
+  - '&c✘ &fNie wchodź do domu administracji bez pozwolenia.'
+  - '&c✘ &fSzanuj innych graczy i administrację.'
+  - '&a✔ &fGraj uczciwie i baw się dobrze.'
+  - ''
+
+  - 'DELAY:200'
+
+  - '&d&l📱 MEDIA'
+  - '&c▶ &fYouTube: &e&l@Milekz'
+  - '&d♫ &fTikTok: &e&l@Milekz'
+  - '&9✦ &fDiscord: &7Link znajdziesz na YouTube.'
+  - ''
+
+  - 'DELAY:200'
+
+  - '&a&l🎮 POWODZENIA!'
+  - '&a⚡ &fMiłej gry na &6MSurvival&f!'
+  - '&a⚡ &fPowodzenia, &e%player%&f!'
+  - ''
+
+
 
 title:
   enabled: true
